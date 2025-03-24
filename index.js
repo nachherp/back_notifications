@@ -7,16 +7,16 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const SECRET_KEY = process.env.JWT_SECRET || "supersecreto";
 
 // Datos falsos de usuario
 const USER_FAKE = {
-  name: "Juan",
+  name: "Ignacio",
   lastName: "Perez",
-  username: "juan",
-  password: "pass123",
-  email: "juan@email.com",
+  username: "ignacio",
+  password: "12345",
+  email: "nacho@gmail.com",
 };
 
 // Ruta pública
